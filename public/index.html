@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chat JS</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="socket.js"></script>
+        <script src="serverData.js"></script>
+    </head>
+    <body>
+
+        <div id="main">
+
+            <div id="chat_box">
+                <div id="channel_description">
+                    <h3 class="" id="channel"># General</h3>
+                </div>
+                <div id="chat">
+                </div>
+                <div id="input_housing">
+                    <input type="text" id="input">
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div id="side_pannel">
+            <div>
+                <button onclick="toggleSettings()" class="button">settings</button>
+            </div>
+        </div>
+
+        <div id="settings" class="hidden">
+            <div id="notif_sound">
+                <p>choose your notification sound</p>
+                <div id="notif_buttons">
+                    <button class="button notif_button" onClick="changeSound('bonk')">bonk</button><br>
+                    <button class="button notif_button" onClick="changeSound('ding')">ding</button><br>
+                    <button class="button notif_button" onClick="changeSound('hello there')">hello there</button><br>
+                    <button class="button notif_button" onClick="changeSound('pew')">pew</button><br>
+                    <button class="button notif_button" onClick="changeSound('pop')">pop</button><br>
+                    <button class="button notif_button" onClick="changeSound('punch')">punch</button><br>
+                    <button class="button notif_button" onClick="changeSound('whip')">whip</button><br>
+                </div>
+            </div>
+        </div>
+
+        <script src="public.js"></script>
+    </body>
+</html>

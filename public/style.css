@@ -1,0 +1,161 @@
+.hidden{
+  display:none !important;
+}
+ 
+#chat{
+  overflow-y: schroll;
+  border-radius: 5px;
+}
+
+#chat::-webkit-scrollbar {
+  width:1em;
+  background:#0002;
+}
+#chat::-webkit-scrollbar-track {
+  background: #0002;
+  border-radius:20px;
+}
+#chat::-webkit-scrollbar-thumb {
+  background: #0004;
+  border-radius:20px;
+}
+
+#main{
+  position: fixed;
+  left:0px;
+  top:0px;
+  width:81vw;
+  height:100vh;
+  display: inline;
+  background: #222;
+  color:#888;
+}
+
+#side_pannel{
+  overflow:scroll;
+  position:fixed;
+  right:0px;
+  top:0px;
+  width:19vw;
+  height:100vh;
+  display: inline;
+  background:#1a1a1a;
+  color:#888;
+  border-width:2px;
+  border:#0002;
+}
+
+#settings{
+  position: fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background-color:#333;
+  color:#888;
+  padding:20px;
+}
+
+#side_pannel::-webkit-scrollbar{
+  display:none !important;
+}
+
+#notif_sound{
+  border-radius: 20px;
+  background:#222;
+  width:20vw;
+  padding:5px;
+  text-align: center;
+  justify-content: center;
+}
+
+#notif_buttons{
+  height:15vh;
+  overflow-y:scroll;
+}
+
+.notif_button{
+  width:15vw;
+  margin-bottom:1.1em;
+}
+
+
+.settings_option{
+    display:inline;
+}
+
+.button{
+  border-radius:20px;
+  border:0px;
+  color:#888;
+  background-color:#111;
+}
+
+#chat_box{
+  width:80vw;
+  margin-left:40pxvw;
+  height:100vh;
+  color:#888;
+  font-family:'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#channel_description{
+  height:5vh;
+  padding:0px;
+  margin:0px;
+  border-bottom:#8888;
+}
+#chat{
+  margin-top:0px;
+  height:88vh;
+  background-color: #0001;
+  overflow-y: scroll;
+}
+#end_of_loaded{
+  width: 0px;
+  height: 0px;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+#input{
+ width:85%;
+ margin-left:2em;
+ background-color:#fff1;
+ border-radius:5px;
+ border:none;
+ color:#888b;
+ height:2em;
+ font-weight:2em;
+}
+#input:focus{
+  outline:none;
+  background:#bbb2;
+}
+
+.message_author{
+  display:inline;
+}
+
+.message_timestamp{
+  color:555;
+  font-size:0.8em;
+  display:inline;
+}
+
+.message_content{
+  margin-top:0px;
+  margin-left:20px;
+}
+
+.message_br{
+  height:0.5em;
+}
+
+.message_span{
+  color:#888;
+  padding-left:1.2em;
+}
+
+.message_span:hover{
+  background: #8881;
+}
